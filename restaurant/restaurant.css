@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.h2,.h3
+
+
+body{
+    background-color: aliceblue;
+}
+
+nav{  
+    height: 100px;
+    background-color: gray;
+    position:relative;
+    border: 2px solid black;
+    border-radius: 10px;
+    border-bottom: none;
+}
+
+ul {
+    margin-left: 458px;
+}
+ul li {
+list-style: none;
+display : inline-block;
+float: left;
+line-height: 150px ;
+
+}
+
+ul li a{
+text-decoration: none;
+font-size: 14px;
+font-family: arial;
+color :aliceblue;
+padding: 0px 20px;
+}
+
+ul li a:hover{
+color: red;
+}
+
+.home1 {
+    height: 80px;
+    top: 10px;
+    position:relative;  
+}
+.home2{
+    height: 450px;
+    position:relative;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-image: url('/fastFood.jpg');
+    background-repeat: no-repeat;
+    background-color: none;
+    background-size: 1260px 1260px;
+}
+.container1{
+    width: 400px;
+    font-size: 30px;
+    font-weight: bold;
+    margin: auto;        
+}
+
+.container2{
+    height: 200px;
+    width : 350px;
+    position:relative;
+    top: 15%;
+    border-radius: 30px;
+    margin-left: 250px;
+    border: 3px solid black;
+    background-image: url('/chef2.png');
+    background-repeat: no-repeat;
+    background-color: none;
+    background-size: 380px 340px;
+}
+.container3{
+    height: 200px;
+    width : 350px;
+    background-color: grey;
+    position:relative;
+    bottom: 31%;
+    border-radius: 30px;
+    margin-left:650px ;
+    border: 3px solid black;
+    background-image: url('/pitza.jfif');
+    background-repeat: no-repeat;
+    background-color: none;
+    background-size: 380px 340px;
+}
+.order1{
+    top: 35px;
+    height: 280px;
+    width: 380px;
+    left: 30px;
+    background-color:darkgray;
+    position: relative;
+    border: 3px solid black;
+    border-radius: 20px;
+    background-image: url('/container1.jpg');
+    background-repeat: no-repeat;
+    background-color: none;
+    background-size: 380px 340px;
+}
+
+.order2{
+    bottom: 250px;
+    height: 280px;
+    width: 380px;
+    left: 440px;
+    background-color:darkgray;
+    position: relative;
+    border: 3px solid black;
+    border-radius: 20px;
+    background-image: url('/Paneer-Tikka.webp');
+    background-repeat: no-repeat;
+    background-color: none;
+    background-size: 380px 340px;
+}
+
+.order3{
+    bottom: 535px;
+    height: 280px;
+    width: 380px;
+    left: 850px;
+    background-color:darkgray;
+    position: relative;
+    border: 3px solid black;
+    border-radius: 20px;
+    background-image: url('/Mushroom-Masala.jpg');
+    background-repeat: no-repeat;
+    background-color: none;
+    background-size: 380px 340px;
+}
+
+.button{
+    padding: 10px;
+    cursor: pointer;
+    background-color: yellow;
+    border-radius: 15px;
+    border-color: aliceblue;
+    border: 3px solid white;
+}
+
+.price-special{
+    position: relative;
+    top: 79%;
+}
+.buttonstyle{
+    position: relative;
+    top: 85%;
+}
+.order{
+    position: relative;
+    top: 8%;
+}
+button:hover{
+    background:red;
+}
+.page-size{
+    height: 200px;
+    width: 50%;
+}
