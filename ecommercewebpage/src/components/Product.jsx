@@ -1,39 +1,33 @@
 import React from 'react'
 import './Product.css'
-import { productData } from './Data'
 
-function Product (props) {
 
-   const productCost = props.productData.map((data) => {
-   <div >
+const Product = (props) => {
+    return (
+    <div>  
+        {props.obj.map(data => {
+                  return(
    <section class="product">
       <h2 class="product-category">best selling</h2>
-         <div className='product-container'>
-
+            <div className='product-container'>
+            
             <div className='product-card' >
-                <div className='product-image' key={data.id}>
+                <div className='product-image'>
                    <span class="discount-tag">{data.offer} </span>
                    <img src={data.URL} class="product-thumb" alt=""/>
+                   
                 </div>
-                <div class="product-info" key={data.id}>
+                <div class="product-info">
                    <h2 class="product-brand">brand</h2>
                    <span class="price">{data.price}</span>
                    <span class="actual-price">{data.actualPrice}</span>
                 </div>
             </div>
+            </div>
 
-         </div>
-   </section>  
+   </section> 
+    )})}
+   </div>
+);}
 
- </div>
-});
-
-  return (
-    <div>
-      {productCost}
-    </div>
-  );
-  
-}
-
-export default Product
+export default Product;

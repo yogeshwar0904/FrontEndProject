@@ -12,7 +12,7 @@ const HomePage = () => {
         <Home/>
         <HomeProfile/>
         <Slider/>
-    
+        <Product obj = {productData} />
         <ClothTypes/>
     </div>
   );
