@@ -1,8 +1,7 @@
 import React from 'react'
-import Catogeries from './Catogeries'
-import  './Home.css'
+import  './HomeHeader.css'
 
-const Home = () => {
+const HomeHeader = () => {
   return (
     <nav className='header'>
        <div className='nav'>
@@ -16,9 +15,9 @@ const Home = () => {
               <a href="#"> <img src="img/cart.png" alt=""/></a>
            </div>
        </div>
-       <Catogeries/>
+       
     </nav>
   )
 }
 
-export default Home;
+export default HomeHeader;

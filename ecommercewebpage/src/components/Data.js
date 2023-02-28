@@ -32,16 +32,5 @@ export const productData =[
       actualPrice:"Rs.1000",
       offer:"50% off",
       brand:""
-   },
-
-   {
-      id:5,
-      URL: process.env.PUBLIC_URL +`/img/card5.png`,
-      price:"Rs.700",
-      actualPrice:"Rs.1000",
-      offer:"30% off",
-      brand:""
-   },
-   
-
+   }  
 ]

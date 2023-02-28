@@ -1,17 +1,22 @@
 import React from 'react'
 import  './Catogeries.css'
+import { BrowserRouter as Router, Routes, 
+  Route,
+  Link
+} from 'react-router-dom';
+import WomenAccessories from './WomenAccessories'
 
 const Catogeries = () => {
   return (
     <div>
-        <ul class="links-container">
-            <li class="link-item"><a href="#" class="link">Home</a></li>
-            <li class="link-item"><a href="#" class="link">Women</a></li>
-            <li class="link-item"><a href="#" class="link">Men</a></li>
-            <li class="link-item"><a href="#" class="link">Kids</a></li>
-            <li class="link-item"><a href="#" class="link">Accessories</a></li>
-       </ul>
-    </div>
+      <Router>
+        <Link to = "/WomenAccessories">Women</Link>
+         <Routes>
+          <Route path = "/WomenAccessories" element ={<WomenAccessories/>}/>
+         </Routes>
+       </Router>
+     </div>
+    
   )
 }
-export default Catogeries
+export default Catogeries;
