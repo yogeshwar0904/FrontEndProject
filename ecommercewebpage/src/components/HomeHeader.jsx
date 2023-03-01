@@ -15,7 +15,6 @@ const HomeHeader = () => {
               <a href="#"> <img src="img/cart.png" alt=""/></a>
            </div>
        </div>
-       
     </nav>
   )
 }

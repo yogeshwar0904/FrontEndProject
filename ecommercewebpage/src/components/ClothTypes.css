@@ -5,6 +5,7 @@ footer{
     padding-bottom: 80px;
     background: #383838;
     top: 20px;
+    
 }
 
 .footer-content{
@@ -29,6 +30,7 @@ footer{
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
     list-style: none;
+    cursor: pointer;
 }
 
 .category-title{
