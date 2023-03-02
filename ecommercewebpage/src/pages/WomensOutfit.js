@@ -1,11 +1,14 @@
 import React from 'react'
-import Layout from '../layouts/Layout'
-
+import HomeHeader from '../components/HomeHeader'
+import Catogeries from '../components/Catogeries'
 const WomenOutfit = () => {
   return (
     <div>
-        <h1>I'am in WomenAccessories</h1>
-        <Layout></Layout>
+         <HomeHeader></HomeHeader>
+         <Catogeries>
+         <h1>I'am in WomenAccessories</h1>
+         </Catogeries>
+        
     </div>
   )
 }

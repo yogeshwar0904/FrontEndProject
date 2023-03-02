@@ -1,10 +1,12 @@
 import React from 'react'
 import './Product.css'
-
+import { Link } from 'react-router-dom';
 
 const Product = (props) => {
+
    return (
-     <div class="product">  
+     <div class="product"> 
+     
         {props.obj.map(data => {
                   return(
          <div>
@@ -12,7 +14,7 @@ const Product = (props) => {
             <div className='product-card' >
                 <div className='product-image'>
                    <span class="discount-tag">{data.offer} </span>
-                   <img src={data.URL} class="product-thumb"/>
+                   <Link to= "/image1outfit" state={data}><img src={data.URL} class="product-thumb"/> </Link>
                    <button class="card-btn">add to whislist</button>
                 </div>
                 <div class="product-info">
@@ -24,6 +26,7 @@ const Product = (props) => {
             </div>
          </div>
     )})}
+
    </div>
 );}
 
