@@ -6,7 +6,6 @@ const Product = (props) => {
 
    return (
      <div class="product"> 
-     
         {props.obj.map(data => {
                   return(
          <div>
@@ -18,7 +17,7 @@ const Product = (props) => {
                    <button class="card-btn">add to whislist</button>
                 </div>
                 <div class="product-info">
-                   <h2 class="product-brand">brand</h2>
+                   <h2 class="product-brand">{data.brand}</h2>
                    <span class="price">{data.price}</span>
                    <span class="actual-price">{data.actualPrice}</span>
                 </div>

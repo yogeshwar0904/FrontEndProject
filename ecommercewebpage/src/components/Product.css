@@ -1,7 +1,7 @@
 .product{
     position: relative;
     overflow: hidden;
-    padding: 10px ;
+    padding: 10px;
     display: flex;
 }
 
@@ -20,16 +20,23 @@
     scroll-behavior: smooth;
 }
 
+.image{
+    position: relative;
+    overflow: hidden;
+    padding:10px;
+    display: flex;
+    top:50px;
+    left:20px;
+}
 .product-container::-webkit-scrollbar{
     display: none;
 }
 
 .product-card{
     flex: 0 0 auto;
-    width: 250px;
+    width: 245px;
     height: 450px;
-    margin-right: 40px;
-    
+    margin-right: 10px;  
 }
 
 .product-image{

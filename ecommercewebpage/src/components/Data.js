@@ -13,7 +13,7 @@ export const productData =[
         price:"Rs.800",
         actualPrice:"Rs.1000",
         offer:"20% off",
-        brand:""
+        brand:"BLACK-BERRY'S"
     },
  
      {
@@ -22,7 +22,7 @@ export const productData =[
         price:"Rs.900",
         actualPrice:"Rs.1800",
         offer:"50% off",
-        brand:""
+        brand:"TURTEL"
      }, 
 
      {
@@ -31,6 +31,6 @@ export const productData =[
       price:"Rs.500",
       actualPrice:"Rs.1000",
       offer:"50% off",
-      brand:""
+      brand:"PETER-ENGLAND"
    }  
 ]
