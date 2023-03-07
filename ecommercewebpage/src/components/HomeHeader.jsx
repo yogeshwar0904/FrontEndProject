@@ -1,7 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { useLocation, useNavigate } from 'react-router-dom'
 import  './HomeHeader.css'
+import ImageData from '../pages/ImageData'
 
-const HomeHeader = () => {
+const HomeHeader = (props) => {
+   const location = useLocation()
+   const data = location.useState
+   const navigate = useNavigate()
+  
+   function cartBucket (){
+      navigate("/customerorder", {state:data})
+   }
   return (
     <nav className='header'>
        <div className='nav'>
@@ -11,8 +20,8 @@ const HomeHeader = () => {
                  <input type ="text" className="search-box" placeholder ="search brand, product"/>
                  <button className='search-btn'>Search</button>
               </div>
-              <a href="#"> <img src='img/user.png'/> </a>
-              <a href="#"> <img src="img/cart.png" alt=""/></a>
+              <a><img src='img/user.png'/> </a>
+              <a onClick={cartBucket} > <img src="img/cart.png"/></a>
            </div>
        </div>
     </nav>

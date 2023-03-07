@@ -14,7 +14,7 @@ font-family: 'roboto', sans-serif;
    left: 0;
 }
 
-.nav{
+.nav {
   padding: 10px 10vw;
   display: flex;
   justify-content: space-between;  
@@ -69,5 +69,6 @@ font-family: 'roboto', sans-serif;
 
 .nav-items a img{
     width: 30px;
+    cursor: pointer;
 }
 

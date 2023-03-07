@@ -11,7 +11,7 @@ import { mensOutfit } from '../components/OutfitData'
 const Layout = () => {
   return (
     <div>
-       <HomeHeader/>
+       <HomeHeader />
        <Catogeries/>        
        <HomeProfile/>
        <Slider/>

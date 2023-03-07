@@ -2,13 +2,14 @@ export const imageDetails = [
     {
         id:1,
         size:"s-size",
-        sizeType:"s"
+        sizeType:"s",
+
     },
 
     {
         id:2,
         size:"m-size",
-        sizeType:"m"  
+        sizeType:"m" , 
     },
 
     {
