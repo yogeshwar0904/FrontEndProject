@@ -9,7 +9,7 @@ const HomeHeader = (props) => {
    const navigate = useNavigate()
   
    function cartBucket (){
-      navigate("/customerorder", {state:data})
+      navigate("/cartproduct")
    }
   return (
     <nav className='header'>
@@ -21,7 +21,9 @@ const HomeHeader = (props) => {
                  <button className='search-btn'>Search</button>
               </div>
               <a><img src='img/user.png'/> </a>
-              <a onClick={cartBucket} > <img src="img/cart.png"/></a>
+              
+              <a onClick={cartBucket} ><img src="img/cart.png"/></a>
+              <div className='cart'>0</div>
            </div>
        </div>
     </nav>

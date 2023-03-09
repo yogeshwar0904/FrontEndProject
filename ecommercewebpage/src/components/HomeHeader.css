@@ -9,7 +9,7 @@ font-family: 'roboto', sans-serif;
    position: sticky;
    width: 100%;
    background-color:rgb(0, 132, 255);
-   z-index: 9;
+   z-index: 1;
    top: 0;
    left: 0;
 }
@@ -64,7 +64,9 @@ font-family: 'roboto', sans-serif;
 }
 
 .nav-items a{
+  
     margin-left: 20px;
+ 
 }
 
 .nav-items a img{
@@ -72,3 +74,8 @@ font-family: 'roboto', sans-serif;
     cursor: pointer;
 }
 
+.cart{
+ 
+    font-weight: 600;
+    color: orange;
+}

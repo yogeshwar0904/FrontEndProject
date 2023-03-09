@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
@@ -7,11 +6,14 @@ import { useNavigate } from 'react-router-dom';
         const location = useLocation()
         const data = location.state;
         const navigate = useNavigate(); 
-        const [cartItems,setCartItems] =useState([])
+        console.log("hiii", data.id)
         function AddToCart (){
-           navigate("/customerorder", {state:data});
+            navigate("/cartproduct", {state:data})
         }
-     
+       
+        function buyProduct(){
+            navigate("/customerorder", {state:data});
+         }
        return (
          <div>
              <div class="details">
@@ -29,8 +31,8 @@ import { useNavigate } from 'react-router-dom';
                        <label for={values.size} class="size-radio-btn check">{values.sizeType}</label>
                     </div>
                  )})}
-            <button class="btn cart-btn" onClick={AddToCart}>buy</button>
-            <button class="btn" onClick={AddToCart}>add to cart</button>
+            <button class="btn cart-btn" onClick={buyProduct}>buy</button>
+            <button class="btn" onClick={AddToCart} >add to cart</button>
          </div>
         </div>
          )}

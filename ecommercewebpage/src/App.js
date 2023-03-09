@@ -9,6 +9,8 @@ import MenOutfit from './pages/MensOutfit';
 import Image1outfit from './pages/Imageoutfit';
 import { imageDetails } from './pages/ImageOutfitData';
 import CustomerOrder from './pages/CustomerOrder';
+import Cartproduct from './pages/Cartproduct';
+import BookingMessage from './pages/BookingMessage';
 function App() {
   return (
     <div>
@@ -19,6 +21,8 @@ function App() {
           <Route path="/menoutfit" element={<MenOutfit />}/>
           <Route path="/image1outfit" element ={<Image1outfit obj={imageDetails}/>} />
           <Route path="/customerorder" element={<CustomerOrder/>}/>
+          <Route path="/cartproduct" element={<Cartproduct/>}/>
+          <Route path='/bookingmessage' element={<BookingMessage/>}/>
        </Routes>
     </div>
   );
