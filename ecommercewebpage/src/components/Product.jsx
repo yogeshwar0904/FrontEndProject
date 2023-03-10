@@ -13,7 +13,7 @@ const Product = (props) => {
             <div className='product-card' >
                 <div className='product-image'>
                    <span class="discount-tag">{data.offer} </span>
-                   <Link to= "/image1outfit" state={data}><img src={data.URL} class="product-thumb"/> </Link>
+                   <Link to= "/imageoutfit" state={data}><img src={data.URL} class="product-thumb"/> </Link>
                    <button class="card-btn">add to whislist</button>
                 </div>
                 <div class="product-info">

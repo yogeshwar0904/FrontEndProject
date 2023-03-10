@@ -13,6 +13,7 @@
     text-transform: capitalize;
 }
 
+
 .product-container{
     padding: 10px;
     display: flex;
@@ -31,6 +32,7 @@
 }
 .image:hover{
     transition:scale(1.5);
+
 }
 .product-container::-webkit-scrollbar{
     display: none;
@@ -43,6 +45,10 @@
     margin-right: 10px;  
 }
 
+.product-image:hover{
+    box-shadow: 0px 0px 10px 5px #03dac5;
+    opacity: 1;
+}
 .product-image{
     position: relative;
     width: 100%;
@@ -109,6 +115,7 @@
 
 .product-card:hover .card-btn{
     opacity: 1;
+    box-shadow: 0px 0px 10px 5px;
 }
 
 .card-btn:hover{

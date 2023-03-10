@@ -4,7 +4,7 @@ import Catogeries from '../components/Catogeries'
 import HomeHeader from '../components/HomeHeader'
 
 import { BookingForm } from './BookingForm';
-import ImageData from './ImageData';
+
 
 const CustomerOrder = () => {
   const location = useLocation()

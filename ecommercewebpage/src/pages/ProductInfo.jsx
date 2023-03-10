@@ -1,12 +1,14 @@
 import { useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
+import { imageDetails } from './ProductSize';
 
  const ProductInfo = (props) => {
+  
         const location = useLocation()
         const data = location.state;
         const navigate = useNavigate(); 
-        console.log("hiii", data.id)
+        const [active, setActive] = useState(false);
         function AddToCart (){
             navigate("/cartproduct", {state:data})
         }
@@ -14,6 +16,15 @@ import { useNavigate } from 'react-router-dom';
         function buyProduct(){
             navigate("/customerorder", {state:data});
          }
+      
+         const handleClick = () => {
+            if(props.sizeType === data.sizeType) {
+            setActive(!active);
+            } else {
+               setActive(active);
+            }
+          };
+
        return (
          <div>
              <div class="details">
@@ -27,8 +38,8 @@ import { useNavigate } from 'react-router-dom';
               {props.obj.map(values =>{
                  return(
                     <div >
-                       <input type="radio" name="size" value="s" hidden id={values.size}/>
-                       <label for={values.size} class="size-radio-btn check">{values.sizeType}</label>
+                       <input type="radio"  hidden id={values.size}/>
+                       <button onClick={handleClick} class={active ?" size-radio-btn btnnn":"size-radio-btn" }><label  >{values.sizeType}</label></button>
                     </div>
                  )})}
             <button class="btn cart-btn" onClick={buyProduct}>buy</button>

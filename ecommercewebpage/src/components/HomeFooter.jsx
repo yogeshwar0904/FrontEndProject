@@ -1,6 +1,6 @@
 import React from 'react'
-import './ClothTypes.css'
-export const ClothTypes = (props) => {
+import './HomeFooter.css'
+export const HomeFooter = (props) => {
     return(
        <footer>
        <div class="footer-content">

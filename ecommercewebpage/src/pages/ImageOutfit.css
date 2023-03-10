@@ -59,6 +59,10 @@
     float: left;
 }
 
+.btnnn{
+   background: orange;
+}
+
 .size-radio-btn:hover {
     background-color:gray;
     }
@@ -82,30 +86,4 @@
     background-color:gray;  
 }
 
-button{
-  font-size: 0.8rem;
-  padding: 0.2rem;
-  margin: 0.1rem;
-  border-radius: 0.5rem;
-  border: 0.1rem #404040;
-  background-color: #f0c040;
-  width: 100%;
-  cursor: pointer;  
-}
-button.add{
-    background: #40c0f0;
-    width: 1.5rem;
-}
-button.add{
-    background: #f04040;
-    width: 1.5rem;
-}
-button.badge{
-    background-color: #f04040;
-    bottom: none;
-    color: #ffff;
-    width: 1.5rem;
-}
-.text-right{
-    text-align: right;
-}
+

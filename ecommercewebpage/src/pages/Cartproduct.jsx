@@ -6,14 +6,12 @@ import ImageData from './ImageData';
 import './Cartproduct.css'
 const Cartproduct = (props) => {
     const location = useLocation();
-    const values = location.state
-    
-    console.log("cartproduct", props.id)
+  
+   
   return (
     <div>
         <HomeHeader/>
         <Catogeries/>
-       
     </div>)
 }
 

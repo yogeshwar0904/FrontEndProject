@@ -35,7 +35,7 @@ export const BookingForm = () => {
         <option value="adjoining">Card</option>
     </select>
   </div>
-  <button type="submit" className='button1' onClick={bookingMessage}>Book The Product</button>
+  <button type="submit" className='button1' onClick={bookingMessage}>Buy The Product</button>
       </form>
     </div>
   )
