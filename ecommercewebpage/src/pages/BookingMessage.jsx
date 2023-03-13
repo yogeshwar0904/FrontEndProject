@@ -3,7 +3,8 @@ import HomeHeader from '../components/HomeHeader'
 import Catogeries from '../components/Catogeries'
 
 import './BookingMessage.css'
-const BookingMessage = () => {
+const BookingMessage = (props) => {
+
   return (
     <div>
        <HomeHeader/>
