@@ -6,7 +6,7 @@ const Product = (props) => {
 
    return (
      <div class="product"> 
-        {props.obj.map(data => {
+        {props.productDetails.map(data => {
                   return(
          <div>
             <div className='product-container'>

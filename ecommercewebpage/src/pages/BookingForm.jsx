@@ -1,8 +1,10 @@
 import './Form.css'
 import React from 'react'
-import { useNavigate, useNavigation } from 'react-router-dom'
+import { useLocation, useNavigate, useNavigation } from 'react-router-dom'
 
 export const BookingForm = () => {
+  const location = useLocation
+  const data = location.state
   const navigate = useNavigate();
   
   function bookingMessage(){
@@ -10,31 +12,21 @@ export const BookingForm = () => {
    } 
   return (
     <div >
-      <form>
+      <form className>
         
       <div class="elem-group">
          <label >Mobile Number</label>
-         <input type="text" id="name" name="visitor_name" placeholder="" required/>
+         <input type="text" placeholder="" required/>
       </div>
       <div class="elem-group1">
-         <label for="email">Your g-mail</label>
-         <input type="email" id="email" name="visitor_email" placeholder="john91@gmail.com" required/>
+         <label for="email">Address</label>
+         <textarea type="address"  placeholder="address" required/>
       </div>
       <div class="elem-group1 ">
-        <label for="price">Price</label>
-        <input type="number"  name="price"  required/>
+        <label for="price">Pincode</label>
+        <input type="number"  placeholder="000-000"  required/>
        </div>
-       <div class="elem-group1 inlined">
-         <label for="child">Offer</label>
-         <input type="number"  name="total_children"   required/>
-       </div>
-       <div class="elem-group1">
-    <label for="room-selection">Select Mode of Pay</label>
-    <select id="room-selection" name="room_preference" required>
-        <option value="connecting">Cash On Delivery</option>
-        <option value="adjoining">Card</option>
-    </select>
-  </div>
+
   <button type="submit" className='button1' onClick={bookingMessage}>Buy The Product</button>
       </form>
     </div>

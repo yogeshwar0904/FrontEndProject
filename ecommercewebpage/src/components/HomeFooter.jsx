@@ -8,14 +8,14 @@ export const HomeFooter = (props) => {
        <div class="footer-ul-container">
         <ul class="category">
         <li class="category-title">Men</li>
-           {props.obj.map(items =>{
+           {props.clothItems.map(items =>{
               return(
                 <li class="footer-link">{items.outfit}</li>
               )})}
         </ul>
         <ul class="category">
         <li class="category-title">Women</li>
-           {props.obj.map(items =>{
+           {props.clothItems.map(items =>{
               return(
                 <li class="footer-link">{items.outfit}</li>
             )})}

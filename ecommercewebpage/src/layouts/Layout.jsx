@@ -16,8 +16,8 @@ const Layout = () => {
        <Catogeries/>
        <HomeProfile/>
        <Slider/>
-       <Product obj = {productData}/>
-       <HomeFooter obj = {mensOutfit}/>
+       <Product productDetails = {productData}/>
+       <HomeFooter clothItems = {mensOutfit}/>
     </div> 
   )
 }

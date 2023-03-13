@@ -9,6 +9,7 @@ import { imageDetails } from './ProductSize';
         const data = location.state;
         const navigate = useNavigate(); 
         const [active, setActive] = useState(false);
+        console.log("listOfValues",props.productDetails)
         function AddToCart (){
             navigate("/cartproduct", {state:data})
         }
@@ -17,12 +18,15 @@ import { imageDetails } from './ProductSize';
             navigate("/customerorder", {state:data});
          }
       
-         const handleClick = () => {
-            if(props.sizeType === data.sizeType) {
-            setActive(!active);
-            } else {
-               setActive(active);
-            }
+         const handleClick = (event) => {
+            // if(val ) {
+
+            // }
+            // console.log("value:::",val);
+            // setActive(!active);
+            //console.log("");
+      
+            event.currentTarget.classList.toggle('size-radio-btn btnnn');
           };
 
        return (
@@ -35,11 +39,16 @@ import { imageDetails } from './ProductSize';
              <span class="product-discount">{data.offer} </span>
              <p class="product-sub-heading">select size</p>
      
-              {props.obj.map(values =>{
+              {props.productDetails.map(values =>{
                  return(
                     <div >
                        <input type="radio"  hidden id={values.size}/>
-                       <button onClick={handleClick} class={active ?" size-radio-btn btnnn":"size-radio-btn" }><label  >{values.sizeType}</label></button>
+                       <button key={values.size} onClick={(event) =>handleClick(event)} class="size-radio-btn"><label  >{values.sizeType}</label></button>
+                       {/* {active ? 
+                       (<button key={values.size} onClick={() =>handleClick(values.size)} class=" size-radio-btn btnnn"><label  >{values.sizeType}</label></button>)
+                       : (<button key={values.size} onClick={() =>handleClick(values.size)} class="size-radio-btn"><label  >{values.sizeType}</label></button>)
+
+                       } */}
                     </div>
                  )})}
             <button class="btn cart-btn" onClick={buyProduct}>buy</button>
