@@ -6,35 +6,39 @@ export const BookingForm = () => {
   const location = useLocation
   const data = location.state
   const navigate = useNavigate();
-  const [userDetails, setUserDetails]= useState({mobileNumber:""},{address:""},{pincode:""})
+  const [userDetails, setUserDetails]= useState({mobileNumber:'', address:'', pincode:''})
 
-  function fetchvalue(event) {
-    setUserDetails( {mobileNumber:event.target.value})
-    setUserDetails( {address:event.target.value})
-    setUserDetails( {pincode:event.target.value})
+  function fetchMobileNumber(event) {
+     setUserDetails({mobileNumber:event.target.value})
   }
    
-  console.log(userDetails.mobileNumber)  
-    
+  function fetchUserAddress(even) {
+     setUserDetails({address:even.target.value})
+  }
+
+  function fetchUserPincode(eve) {
+    setUserDetails({pincode:eve.target.value})
+ }
+
   function bookingMessage(){
-    navigate('/bookingmessage')
+    navigate('/bookingmessage',{state:userDetails})
    } 
 
   return (
     <div >
-      <form className>
+      <form >
         
-      <div class="elem-group">
+      <div className="elem-group">
          <label >Mobile Number</label>
-         <input value={userDetails.mobileNumber}  type="text" placeholder="" name="mobileNumber" onChange ={fetchvalue} required/>
+         <input  type="number" placeholder=""  onChange ={(event)=>fetchMobileNumber(event)} required/>
       </div>
-      <div class="elem-group1">
-         <label for="email">Address</label>
-         <textarea value={userDetails.address} type="address"  placeholder="address"   name= "address" onChange ={(event) => fetchvalue(event)} required/>
+      <div className="elem-group1">
+         <label >Address</label>
+         <textarea type="text"  placeholder="address"   onChange ={ (even) => fetchUserAddress(even)} required/>
       </div>
-      <div class="elem-group1 ">
-        <label for="price">Pincode</label>
-        <input value={userDetails.pincode} type="number"  placeholder="000-000"  onChange ={(event) => fetchvalue(event)} required/>
+      <div className="elem-group1 ">
+        <label >Pincode</label>
+        <input  type="number"  placeholder="000-000"  onChange ={(eve) => fetchUserPincode(eve)} required/>
        </div>
 
   <button type="submit" className='button1' onClick={bookingMessage} >Buy The Product</button>

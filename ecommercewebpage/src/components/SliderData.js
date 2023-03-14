@@ -2,27 +2,27 @@
 
 const dataSlider = [
     {
-      id: 1,
+      key: 1,
       title: "Lorem ipsum",
       subTitle: "Lorem"
     },
     {
-      id: 2,
+      key: 2,
       title: "Lorem ipsum",
       subTitle: "Lorem"
     },
     {
-      id: 3,
+      key: 3,
       title: "Lorem ipsum",
       subTitle: "Lorem"
     },
     {
-      id: 4,
+      key: 4,
       title: "Lorem ipsum",
       subTitle: "Lorem"
     },
     {
-      id: 5,
+      key: 5,
       title: "Lorem ipsum",
       subTitle: "Lorem"
     },

@@ -3,21 +3,21 @@ import './HomeFooter.css'
 export const HomeFooter = (props) => {
     return(
        <footer>
-       <div class="footer-content">
-       <img src="img/light-logo.png" class="logo" alt=""/>
-       <div class="footer-ul-container">
-        <ul class="category">
-        <li class="category-title">Men</li>
+       <div className="footer-content">
+       <img src="img/light-logo.png" className="logo" alt=""/>
+       <div className="footer-ul-container">
+        <ul className="category">
+        <li className="category-title">Men</li>
            {props.clothItems.map(items =>{
               return(
-                <li class="footer-link">{items.outfit}</li>
+                <li className="footer-link">{items.outfit}</li>
               )})}
         </ul>
-        <ul class="category">
-        <li class="category-title">Women</li>
+        <ul className="category">
+        <li className="category-title">Women</li>
            {props.clothItems.map(items =>{
               return(
-                <li class="footer-link">{items.outfit}</li>
+                <li className="footer-link">{items.outfit}</li>
             )})}
         </ul>
        </div>

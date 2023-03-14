@@ -5,20 +5,20 @@ import {Link} from 'react-router-dom';
 const Catogeries = () => {
   return (
     <div >
-       <ul class="links-container">
-          <li class="link-item">
+       <ul className="links-container">
+          <li className="link-item">
           <Link to="/" className="link"> Home</Link>
           </li>
-          <li class="link-item">
+          <li className="link-item">
           <Link to="/womenoutfit" className="link"> Women</Link>
           </li>
-          <li class="link-item">
+          <li className="link-item">
           <Link to="/menoutfit" className="link"> Men</Link>
           </li>
-          <li class="link-item">
+          <li className="link-item">
           <Link to="/kidsoutfit" className="link"> Kids</Link>
           </li>
-          <li class="link-item">
+          <li className="link-item">
           <Link to="/" className="link"> Accessories</Link>
           </li>
         </ul>

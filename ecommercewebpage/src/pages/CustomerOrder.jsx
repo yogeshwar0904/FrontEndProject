@@ -8,7 +8,10 @@ import { BookingForm } from './BookingForm';
 
 const CustomerOrder = () => {
   const location = useLocation()
-  const data = location.state
+  const {active,data} = location.state
+  console.log("check the data", data.price)
+  console.log("Size", active)
+ 
   return (
     <div>
       <HomeHeader/>

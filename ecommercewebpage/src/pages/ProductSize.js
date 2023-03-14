@@ -1,32 +1,26 @@
 export const imageDetails = [
     {
-        id:1,
-        size:"s-size",
-        sizeType:"s",
-
+        key:1,
+        sizeType:"s"
     },
 
     {
-        id:2,
-        size:"m-size",
+        key:2,
         sizeType:"m" , 
     },
 
     {
-        id:3,
-        size:"l-size",
+        key:3,
         sizeType:"l"  
     },
 
     {
-        id:4,
-        size:"xl-size",
+        key:4,
         sizeType:"xl"  
     },
     
     {
-        id:5,
-        size:"xxl-size",
+        key:5,
         sizeType:"xxl"  
     }
 ]

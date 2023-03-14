@@ -1,6 +1,6 @@
 export const productData =[
     {
-       id:1,
+       key:1,
        URL: process.env.PUBLIC_URL +`/img/card1.png`,
        price:"Rs.600",
        actualPrice:"Rs.1200",
@@ -8,7 +8,7 @@ export const productData =[
        brand:"POLO"
     },
     {
-        id:2,
+        key:2,
         URL: process.env.PUBLIC_URL +`/img/card2.png`,
         price:"Rs.800",
         actualPrice:"Rs.1000",
@@ -17,7 +17,7 @@ export const productData =[
     },
  
      {
-        id:3,
+        key:3,
         URL: process.env.PUBLIC_URL +`/img/card3.png`,
         price:"Rs.900",
         actualPrice:"Rs.1800",
@@ -26,7 +26,7 @@ export const productData =[
      }, 
 
      {
-      id:4,
+      key:4,
       URL: process.env.PUBLIC_URL +`/img/card4.png`,
       price:"Rs.500",
       actualPrice:"Rs.1000",

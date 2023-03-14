@@ -6,16 +6,16 @@ export default function ImageData () {
     const data = location.state;
    return (  
     <div className='image'>
-    <div className='product-card' >
+    <div className='product-card'>
         <div className='product-image'>
-           <span class="discount-tag">{data.offer} </span>
-          <img src={data.URL} class="product-thumb"/> 
-           <button class="card-btn">add to whislist</button>
+           <span className="discount-tag">{data.offer} </span>
+          <img src={data.URL} className="product-thumb"/> 
+           <button className="card-btn">add to whislist</button>
         </div>
-        <div class="product-info">
-           <h2 class="product-brand">{data.brand}</h2>
-           <span class="price">{data.price}</span>
-           <span class="actual-price">{data.actualPrice}</span>
+        <div className="product-info">
+           <h2 className="product-brand">{data.brand}</h2>
+           <span className="price">{data.price}</span>
+           <span className="actual-price">{data.actualPrice}</span>
         </div>
     </div>
     </div>

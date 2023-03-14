@@ -17,7 +17,7 @@ const HomeHeader = (props) => {
         <img src="" className= 'brand-logo'/>
            <div className='nav-items'>
               <div className='search'>
-                 <input type ="text" className="search-box" placeholder ="search brand, product"/>
+                 <input type ="text" className="search-box" placeholder ="search brand, item"/>
                  <button className='search-btn'>Search</button>
               </div>
               <a><img src='img/user.png'/> </a>

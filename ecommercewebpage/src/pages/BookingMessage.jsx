@@ -3,8 +3,12 @@ import HomeHeader from '../components/HomeHeader'
 import Catogeries from '../components/Catogeries'
 
 import './BookingMessage.css'
-const BookingMessage = (props) => {
-
+import { useLocation } from 'react-router-dom'
+const BookingMessage = () => {
+ const location = useLocation()
+ const data = location.state
+ console.log("userDetails",data);
+ console.log("name",data.mobileNumber);
   return (
     <div>
        <HomeHeader/>

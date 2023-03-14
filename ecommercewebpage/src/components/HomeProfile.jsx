@@ -3,10 +3,10 @@ import  './HomeProfile.css'
 
 const HomeProfile = () => {
   return (
-    <header class="hero-section">
-       <div class="content">
-           <img src="img/light-logo.png" class="logo"/>
-           <p class="sub-heading">best fashion collection of all time</p>
+    <header className="hero-section">
+       <div className="content">
+           <img src="img/light-logo.png" className="logo"/>
+           <p className="sub-heading">best fashion collection of all time</p>
        </div>
     </header>
   )
