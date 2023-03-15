@@ -9,7 +9,6 @@ import { imageDetails } from './ProductSize';
         const data = location.state;
         const navigate = useNavigate(); 
         const [active, setActive] = useState('');
-        
 
         function AddToCart (){
             navigate("/cartproduct", {state:data})
@@ -17,11 +16,12 @@ import { imageDetails } from './ProductSize';
       
         function buyProduct(){
          if (active !== '') {
-            navigate("/customerorder", {state :{active,data}});
-            
+            data.size=active;
+            navigate("/customerorder", {state :data});
+           
          } else {
             alert("Please select the size!!!")
-         }}
+          }}
 
        return (
          <div>
@@ -35,7 +35,7 @@ import { imageDetails } from './ProductSize';
      
               {props.productDetails.map(values =>{
                  return(
-                    <div >
+                    <div key={values.key}>
                        <input type="radio"  hidden id={values.sizeType}/>
                        {active === values.sizeType ?
                      
@@ -45,6 +45,7 @@ import { imageDetails } from './ProductSize';
                        
                     </div>
                  )})}
+                 
             <button  className="btn cart-btn" onClick={buyProduct}>buy</button>
             <button className="btn cart-btn" onClick={AddToCart} >add to cart</button>
          </div>

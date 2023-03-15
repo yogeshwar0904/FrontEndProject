@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import '../components/Product'
+//import '../components/Product'
 import HomeHeader from '../components/HomeHeader'
 import Catogeries from '../components/Catogeries'
 import './ImageOutfit.css'

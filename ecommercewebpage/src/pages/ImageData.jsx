@@ -4,6 +4,8 @@ import { useLocation } from "react-router-dom";
 export default function ImageData () {
     const location = useLocation()
     const data = location.state;
+    console.log("imagedata::", data);
+
    return (  
     <div className='image'>
     <div className='product-card'>

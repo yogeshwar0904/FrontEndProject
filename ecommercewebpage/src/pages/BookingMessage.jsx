@@ -4,6 +4,7 @@ import Catogeries from '../components/Catogeries'
 
 import './BookingMessage.css'
 import { useLocation } from 'react-router-dom'
+import ImageData from './ImageData'
 const BookingMessage = () => {
  const location = useLocation()
  const data = location.state

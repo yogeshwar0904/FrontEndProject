@@ -5,15 +5,15 @@ import { Link } from 'react-router-dom';
 const Product = (props) => {
 
    return (
-     <div className="product"> 
+     <div className="product" >
         {props.productDetails.map(data => {
                   return(
-         <div>
+         <div key ={data.key}>
             <div className='product-container'>
             <div className='product-card' >
                 <div className='product-image'>
                    <span className="discount-tag">{data.offer} </span>
-                   <Link to= "/imageoutfit" state={data}><img src={data.URL} className="product-thumb"/> </Link>
+                   <Link to= "/imageoutfit"  state={data}><img src={data.URL} className="product-thumb"/> </Link>
                    <button className="card-btn">add to whislist</button>
                 </div>
                 <div className="product-info">

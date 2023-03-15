@@ -10,14 +10,14 @@ export const HomeFooter = (props) => {
         <li className="category-title">Men</li>
            {props.clothItems.map(items =>{
               return(
-                <li className="footer-link">{items.outfit}</li>
+                <li key={items.id} className="footer-link">{items.outfit}</li>
               )})}
         </ul>
         <ul className="category">
         <li className="category-title">Women</li>
            {props.clothItems.map(items =>{
               return(
-                <li className="footer-link">{items.outfit}</li>
+                <li key={items.id} className="footer-link">{items.outfit}</li>
             )})}
         </ul>
        </div>

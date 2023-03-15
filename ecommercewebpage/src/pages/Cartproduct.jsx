@@ -10,6 +10,7 @@ const Cartproduct = (props) => {
     <div>
         <HomeHeader/>
         <Catogeries/>
+        <ImageData/>
     </div>)
 }
 
