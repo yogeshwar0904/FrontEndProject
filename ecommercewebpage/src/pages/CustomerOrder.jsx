@@ -5,6 +5,7 @@ import HomeHeader from '../components/HomeHeader'
 
 import { BookingForm } from './BookingForm';
 import ImageData from './ImageData';
+import { ProductPreview } from './ProductPreview';
 
 const CustomerOrder = () => {
   const location = useLocation()
@@ -16,6 +17,7 @@ const CustomerOrder = () => {
       <HomeHeader/>
       <Catogeries/>
       <BookingForm/>
+      <ProductPreview/>
     </div>
   )
 }

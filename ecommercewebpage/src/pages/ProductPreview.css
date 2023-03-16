@@ -1,0 +1,32 @@
+.container1{
+    position: absolute;
+    left: 800px;
+    right: 400px;
+    height: 250px;
+    width: 280px;
+    top: 200px;
+    display: flex;
+    justify-content: center;
+    background: wheat;
+    border-radius: 10px;
+  }
+  
+  table {
+     font-size: 80%; table-layout: fixed; width: 100%; 
+    }
+  table { 
+    border-collapse: separate; border-spacing: 5px;
+   }
+  th, td { 
+    border-width: 1px; padding: 0.5em; position: relative; text-align: center;
+   }
+  th, td { 
+    border-radius: 0.25em; border-style: solid; 
+  }
+  th {
+     background: #EEE; border-color: #BBB; 
+     /* box-shadow: 0px 0px 5px 0px #03dac5; */
+    }
+  td { 
+    border-color: #DDD;
+   }

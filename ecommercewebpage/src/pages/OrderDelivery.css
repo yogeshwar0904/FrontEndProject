@@ -1,0 +1,9 @@
+.container2{
+    position: relative;
+    right: 400px;
+    height: 250px;
+    width: 280px;
+    bottom: 80px;
+    justify-content: center;
+    align-items: center;
+  }

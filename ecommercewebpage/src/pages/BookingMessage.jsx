@@ -5,6 +5,8 @@ import Catogeries from '../components/Catogeries'
 import './BookingMessage.css'
 import { useLocation } from 'react-router-dom'
 import ImageData from './ImageData'
+import PaymentForm from './PaymentForm'
+import { ProductPreview } from './ProductPreview'
 const BookingMessage = () => {
  const location = useLocation()
  const data = location.state
@@ -14,7 +16,8 @@ const BookingMessage = () => {
     <div>
        <HomeHeader/>
        <Catogeries/>
-        <h1 className='heade'>Product Booked Successfully!!!</h1>
+       <PaymentForm/>
+       <ProductPreview/>
     </div>
   )
 }

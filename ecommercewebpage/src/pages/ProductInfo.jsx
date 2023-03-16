@@ -9,6 +9,7 @@ import { imageDetails } from './ProductSize';
         const data = location.state;
         const navigate = useNavigate(); 
         const [active, setActive] = useState('');
+       
 
         function AddToCart (){
             navigate("/cartproduct", {state:data})
@@ -18,7 +19,7 @@ import { imageDetails } from './ProductSize';
          if (active !== '') {
             data.size=active;
             navigate("/customerorder", {state :data});
-           
+            
          } else {
             alert("Please select the size!!!")
           }}

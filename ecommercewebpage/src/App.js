@@ -12,6 +12,8 @@ import CustomerOrder from './pages/CustomerOrder';
 import Cartproduct from './pages/Cartproduct';
 import BookingMessage from './pages/BookingMessage';
 import Imageoutfit from './pages/Imageoutfit';
+import OrderDelivery from './pages/OrderDelivery';
+
 function App() {
   return (
     <div>
@@ -24,6 +26,7 @@ function App() {
           <Route path="/customerorder" element={<CustomerOrder/>}/>
           <Route path="/cartproduct" element={<Cartproduct/>}/>
           <Route path='/bookingmessage' element={<BookingMessage/>}/>
+          <Route path='/orderdelivery' element={<OrderDelivery/>}/>
        </Routes>
     </div>
   );

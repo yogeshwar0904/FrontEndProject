@@ -40,7 +40,7 @@ export const BookingForm = () => {
 
       <div className='input-box'>
          <label >E-mail Address</label>
-         <input type="text"  placeholder=""   onChange ={ (even) => fetchUserAddress(even)} required/>
+         <input type="text"  placeholder=""   onChange ={(even) => fetchUserAddress(even)} required/>
       </div>
 
       <div className='input-box'>
@@ -77,9 +77,7 @@ export const BookingForm = () => {
       
       </form>
     </div>
-    <div>
-      <h2 className='container1'>Product Data</h2>
-    </div>
+
     </div>
    
     </div>
