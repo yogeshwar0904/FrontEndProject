@@ -9,8 +9,8 @@ import { imageDetails } from './ProductSize';
         const data = location.state;
         const navigate = useNavigate(); 
         const [active, setActive] = useState('');
-       
-
+        console.log("I'm in product info",data)
+         
         function AddToCart (){
             navigate("/cartproduct", {state:data})
         }

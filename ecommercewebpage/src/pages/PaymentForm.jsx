@@ -1,10 +1,12 @@
 import React from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useLocation, useNavigate } from 'react-router-dom'
 import './Paymentform.css'
 const PaymentForm = () => {
   const rout = useNavigate();
+  const location = useLocation();
+  const data = location.state;
   function deliveryOrder(){
-     rout("/orderdelivery");
+     rout("/orderdelivery", {state:data});
   }
   return (
     <div className='page-container'>

@@ -9,8 +9,8 @@ import { ProductPreview } from './ProductPreview';
 
 const CustomerOrder = () => {
   const location = useLocation()
-  const {data} = location.state
-  console.log("Object",data)
+  const data = location.state
+  console.log("Object::::::::::",data)
  
   return (
     <div>
@@ -18,6 +18,7 @@ const CustomerOrder = () => {
       <Catogeries/>
       <BookingForm/>
       <ProductPreview/>
+      <ImageData/>
     </div>
   )
 }

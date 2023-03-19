@@ -11,7 +11,7 @@ const BookingMessage = () => {
  const location = useLocation()
  const data = location.state
  console.log("userDetails",data);
- console.log("address",data.address);
+ console.log("name",data.fullName);
   return (
     <div>
        <HomeHeader/>
