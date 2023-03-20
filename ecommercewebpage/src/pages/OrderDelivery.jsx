@@ -13,7 +13,11 @@ const OrderDelivery = () => {
         <Catogeries/>
         <div className='container2'>
         <ProductPreview/>
-        </div>   
+        </div> 
+        <div className='order-delivery'>
+        <ImageData/> 
+        </div> 
+         
     </div>
   )
 }

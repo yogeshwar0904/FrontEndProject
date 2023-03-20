@@ -18,7 +18,7 @@ export const BookingForm = () => {
    }
 
   function bookingMessage() {
-    navigate('/bookingmessage',{state:userOutfit})
+    navigate('/shippinguserproduct',{state:userOutfit});
    } 
 
   return(
@@ -27,7 +27,7 @@ export const BookingForm = () => {
     <div className='container '>
 
       <form className='form' onSubmit={ (event) => bookingMessage(event)}>
-        <header >Customer Details</header>
+        <header >Sign-up</header>
 
       <div className='input-box'>
          <label>Full Name</label>

@@ -13,6 +13,7 @@ import Cartproduct from './pages/Cartproduct';
 import BookingMessage from './pages/BookingMessage';
 import Imageoutfit from './pages/Imageoutfit';
 import OrderDelivery from './pages/OrderDelivery';
+import ShippingUserProduct from './pages/ShippingUserProduct';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
           <Route path="/cartproduct" element={<Cartproduct/>}/>
           <Route path='/bookingmessage' element={<BookingMessage/>}/>
           <Route path='/orderdelivery' element={<OrderDelivery/>}/>
+          <Route path='/shippinguserproduct' element={<ShippingUserProduct/>}/>
        </Routes>
     </div>
   );

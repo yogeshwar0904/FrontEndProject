@@ -17,8 +17,6 @@ const CustomerOrder = () => {
       <HomeHeader/>
       <Catogeries/>
       <BookingForm/>
-      <ProductPreview/>
-      <ImageData/>
     </div>
   )
 }

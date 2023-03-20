@@ -17,7 +17,6 @@ const BookingMessage = () => {
        <HomeHeader/>
        <Catogeries/>
        <PaymentForm/>
-       <ProductPreview/>
     </div>
   )
 }
