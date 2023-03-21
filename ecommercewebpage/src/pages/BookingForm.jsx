@@ -31,17 +31,17 @@ export const BookingForm = () => {
 
       <div className='input-box'>
          <label>Full Name</label>
-         <input  type="text" key={userDetails.fullName} id ='fullName' name ='fullName' placeholder=""  onChange ={(event)=>getDatas(event)} required/>
+         <input  type="text"  id ='fullName' name ='fullName' placeholder="Enter your name"  onChange ={(event)=>getDatas(event)} required/>
       </div>
 
       <div className='input-box'>
          <label >E-mail Address</label>
-         <input type="text"  key={userDetails.email} id='email' name='email' placeholder=""   onChange ={(event) => getDatas(event)} required/>
+         <input type="text"   id='email' name='email' placeholder="Enter your e-mail address"   onChange ={(event) => getDatas(event)} required/>
       </div>      
 
       <div className='input-box'>
         <label >Mobile Number</label>
-        <input  type="number"   id='mobileNumber' name='mobileNumber' placeholder=""  onChange ={(event) => getDatas(event)} required/>
+        <input  type="number"   id='mobileNumber' name='mobileNumber' placeholder="Enter your Mobile Number"  onChange ={(event) => getDatas(event)} required/>
        </div>
        
       

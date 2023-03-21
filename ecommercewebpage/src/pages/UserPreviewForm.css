@@ -1,4 +1,4 @@
-*{
+ *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -11,99 +11,74 @@
     height: 100vh;
   }
   
-  .wrapper{
+  .wrapper {
     position: absolute;
     left: 30%;
     top: 60%;
     transform: translate(-50%, -50%);
     width: 100%;
-    max-width: 550px;
+    max-width: 750px;
     background: rgba(0,0,0,0.8);
     /* background: #9495a5; */
-    padding: 30px;
+    padding: 20px;
     border-radius: 50px 20px;
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
   }
   
-  .wrapper .title h1{
+   .wrapper .title h1{
     color: #c5ecfd;
     text-align: center;
     margin-bottom: 25px;
   }
   
-  .contact-form{
-    display: flex;
-  }
-  
-  .input-fields{
-    display: flex;
-    flex-direction: column;
-    margin-right: 4%;
-
-  }
-  
-  .input-fields,
-  .msg{
-    width: 48%;
-  }
-  
-  .input-fields .input,
-  .msg textarea{
-    margin: 10px 0;
-    background: transparent;
-    border: 0px;
-    border-bottom: 2px solid #c5ecfd;
-    padding: 10px;
-    color: #c5ecfd;
-    width: 100%;
-  }
-  
-  .msg textarea{
-    height: 212px;
-  }
-  
+ 
   ::-webkit-input-placeholder {
-    /* Chrome/Opera/Safari */
     color: #c5ecfd;
   }
  
-  
-  .btn {
+  .btnn {
       background: #39b7dd;
       text-align: center;
-      padding: 15px;
-      border-radius: 5px;
+      padding: 10px;
+      border-radius: 10px;
       color: #fff;
       cursor: pointer;
       text-transform: uppercase;
-      border: 2px solid white;
+      border: 2px solid white; 
+      margin-left: 50px;
+      margin-top: 10px;
+      width: 200px; 
+      height: 50px;
   }
   
-  @media screen {
-    .contact-form{
-      flex-direction: column;
-    }
-    .msg textarea{
-      height: 80px;
-    }
-    .input-fields,
-    .msg{
-      width: 100%;
-    }
-  }
   .order-by {
     position:relative;  
     color: #fff;
-    height: 60px;
-    width: 400px;  
+    height: 70px;
+    width: 600px;  
     background-color: #39b7dd;
     border-radius: 7px;
     padding: 5px;
     border: 2px solid white;
     font-size: 20px;
+    margin-top: 10px;
+    margin-left: 50px;
   }
+
   .address-details {
-    height: 110px;
+    height: 80px;
     margin-top: 10px;
     padding: 10px;
+  } 
+  .edit-form{
+    position: relative;
+    width:120px;
+    background: orange;
+    height: 35px;
+    margin-left: 450px;
+    bottom: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #c5ecfd;
   }

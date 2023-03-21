@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
-import { imageDetails } from './ProductSize';
+import './ProductInfo.css'
 
  const ProductInfo = (props) => {
   

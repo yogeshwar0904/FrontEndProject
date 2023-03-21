@@ -1,17 +1,16 @@
 *{
   margin: 0;
   box-sizing: border-box;
-  padding: 0px;
+  padding: 0;
 }
 .outer-container{
   min-height: 100vh;
-  /* max-width: 700px; */
-  width: 100%;
+  width: 60%;
   display: flex;
-  align-items: center;
-  /* justify-content: center; */
-  padding: 150px 30px 20px 230px;
+  padding: 150px 30px 20px 100px;
   background: linear-gradient(to right, #99004d 0%, #ff0080 100%);
+  border-radius: 50px;
+  margin-left: 140px;
 }
 .container{
   position: relative;
@@ -97,10 +96,10 @@ margin-top: 20px;
   margin-top: 20px;
   padding: 5px;
 }
+
 .button1:hover {
   border: 2px solid black;
 }
-
 
  .label-container{
   font-size: 20px;

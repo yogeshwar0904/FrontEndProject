@@ -19,18 +19,24 @@ const UserPreviewForm = () => {
                   <p>
                   {data.mobileNumber}
                   </p>
+                  <button className='edit-form'>change</button>
               </div>
               <div className='order-by address-details'>
                   <h3 >Deliver To</h3>
                   <p>
-                  {data.fullName}, {data.address}<br/>
-                  {data.city}<br/>
-                  {data.pincode}<br/>
+                  {data.fullName}, {data.address}, {data.city} - {data.pincode}
+                </p>
+                <button className='edit-form'>change</button>
+              </div>
+              <div className='order-by'>
+                  <p>
+                   order conformation will send to {data.email}
                 </p>
               </div>
               
+              
            </div>
-           <div class="btn" onClick={routToBookingMessage}>Click to Continue</div>
+           <div class="btnn" onClick={routToBookingMessage}>Click to Continue</div>
         </div>
     </div>
   )
