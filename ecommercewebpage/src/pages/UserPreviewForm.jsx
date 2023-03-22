@@ -9,6 +9,11 @@ const UserPreviewForm = () => {
    function routToBookingMessage(){
      navigate('/bookingmessage', {state:data})
    }
+
+   function routToCustomerOrder() {
+    navigate('/customerorder', {state:data})
+   }
+
   return (
     <div>
         <div class="wrapper">
@@ -19,7 +24,7 @@ const UserPreviewForm = () => {
                   <p>
                   {data.mobileNumber}
                   </p>
-                  <button className='edit-form'>change</button>
+                  <button className='edit-form' onClick={routToCustomerOrder}>change</button>
               </div>
               <div className='order-by address-details'>
                   <h3 >Deliver To</h3>

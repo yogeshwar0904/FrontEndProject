@@ -1,4 +1,4 @@
-export const productData =[
+export let productData =[
     {
        key:1,
        URL: process.env.PUBLIC_URL +`/img/card1.png`,
