@@ -7,7 +7,7 @@ const UserPreviewForm = () => {
    console.log('name:::::::::',data.fullName)
    const navigate = useNavigate();
    function routToBookingMessage(){
-     navigate('/bookingmessage', {state:data})
+     navigate('/paymentpage', {state:data})
    }
 
    function routToCustomerOrder() {
@@ -20,16 +20,19 @@ const UserPreviewForm = () => {
            <div class="title">
               <h1>CheckOut</h1>
               <div className='order-by'>
-                  <h3>Login</h3>
+                  <h4>Login</h4>
                   <p>
                   {data.mobileNumber}
                   </p>
                   <button className='edit-form' onClick={routToCustomerOrder}>change</button>
               </div>
               <div className='order-by address-details'>
-                  <h3 >Deliver To</h3>
+                  <h4>Deliver To</h4>
                   <p>
-                  {data.fullName}, {data.address}, {data.city} - {data.pincode}
+                  {data.fullName},<br/> 
+                  {data.address},<br/> 
+                  {data.city},<br/>
+                  {data.pincode}
                 </p>
                 <button className='edit-form'>change</button>
               </div>

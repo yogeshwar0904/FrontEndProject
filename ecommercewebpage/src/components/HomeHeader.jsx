@@ -23,7 +23,7 @@ const HomeHeader = (props) => {
               <a><img src='img/user.png'/> </a>
               
               <a onClick={cartBucket} ><img src="img/cart.png"/></a>
-              <div className='cart'>0</div>
+              <div className='cart'></div>
            </div>
        </div>
     </nav>

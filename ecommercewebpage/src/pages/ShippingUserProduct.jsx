@@ -10,7 +10,7 @@ const ShippingUserProduct = () => {
   const data = location.state;
   console.log("Shipping Form:::::" ,data)
   return (
-    <div>
+    <div className='page-color'>
         <HomeHeader/>
         <Catogeries/>
         <UserPreviewForm/>

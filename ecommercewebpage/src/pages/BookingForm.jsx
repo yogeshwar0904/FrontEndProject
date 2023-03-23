@@ -14,7 +14,6 @@ export const BookingForm = () => {
    function getDatas(event) {
       const {name, value} = event.target;
        setUserDetails({ ...userDetails, [name]:value})
-       
    }
 
   function bookingMessage() {
@@ -23,7 +22,7 @@ export const BookingForm = () => {
 
   return(
     <div >
-    <div className="outer-container">
+    <div className="">
     <div className='container '>
 
       <form className='form' onSubmit={ (event) => bookingMessage(event)}>
@@ -41,7 +40,7 @@ export const BookingForm = () => {
 
       <div className='input-box'>
         <label >Mobile Number</label>
-        <input  type="number"   id='mobileNumber' name='mobileNumber' placeholder="Enter your Mobile Number"  onChange ={(event) => getDatas(event)} required/>
+        <input  type="text"   id='mobileNumber' name='mobileNumber' placeholder="Enter your Mobile Number"   onChange ={(event) => getDatas(event)} required/>
        </div>
        
       
@@ -62,7 +61,7 @@ export const BookingForm = () => {
         </div>
         <div className='column'>
         <input  type="text"  placeholder="Enter your region"  required/>
-        <input  type="number"  name='pincode'placeholder="Enter postal code"  onChange ={(event)=>getDatas(event)} required/>
+        <input  type="text"  name='pincode'placeholder="Enter postal code"  onChange ={(event)=>getDatas(event)} required/>
         </div>
 
        </div>

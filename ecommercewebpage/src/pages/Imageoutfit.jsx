@@ -8,7 +8,7 @@ import ImageData from './ImageData'
 export default function Imageoutfit () {
 
   return (
-    <div>  
+    <div className='page-color'>  
     <HomeHeader/>
     <Catogeries/>
     <ImageData />

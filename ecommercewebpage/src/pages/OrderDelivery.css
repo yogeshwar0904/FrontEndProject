@@ -3,11 +3,15 @@
     right: 400px;
     height: 250px;
     width: 280px;
-    bottom: 80px;
+    top: 30px;
     justify-content: center;
     align-items: center;
   }
   .order-delivery{
     position:absolute;
-    top: 15px;
+    top: 120px;
+  }
+  .page{
+    background:#E1EBEE;
+    height: 740px;
   }

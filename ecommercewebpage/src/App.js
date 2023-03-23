@@ -10,10 +10,10 @@ import MenOutfit from './pages/MensOutfit';
 import { imageDetails } from './pages/ProductSize';
 import CustomerOrder from './pages/CustomerOrder';
 import Cartproduct from './pages/Cartproduct';
-import BookingMessage from './pages/BookingMessage';
 import Imageoutfit from './pages/Imageoutfit';
 import OrderDelivery from './pages/OrderDelivery';
 import ShippingUserProduct from './pages/ShippingUserProduct';
+import PaymentPage from './pages/PaymentPage';
 
 function App() {
   return (
@@ -26,7 +26,7 @@ function App() {
           <Route path="/imageoutfit" element ={<Imageoutfit obj={imageDetails}/>} />
           <Route path="/customerorder" element={<CustomerOrder/>}/>
           <Route path="/cartproduct" element={<Cartproduct/>}/>
-          <Route path='/bookingmessage' element={<BookingMessage/>}/>
+          <Route path='/paymentpage' element={<PaymentPage/>}/>
           <Route path='/orderdelivery' element={<OrderDelivery/>}/>
           <Route path='/shippinguserproduct' element={<ShippingUserProduct/>}/>
        </Routes>

@@ -32,14 +32,24 @@ export const ProductPreview = () => {
 				    </div>
 					<div className='row-one-group '>
 					<div className='row-one-table '>
-						<div className='row-three-body '>Total payable</div>
-						<div className='row-three-body'>{data.price}</div>
+						<div className='row-three-body '>Payment Mode</div>
+						<div className='row-three-body'>Cash on delivery</div>
+					
+					</div>	
+				    </div>
+					<div className='row-one-group '>
+					<div className='row-one-table '>
+						<div className='row-four-body '>Total payable</div>
+						<div className='row-four-body'>{data.price}</div>
 					
 					</div>	
 				    </div>
 				</div>
 				
 	        </div>
+			<div>
+				<h1>hii</h1>
+			</div>
 
     </div>
   )
