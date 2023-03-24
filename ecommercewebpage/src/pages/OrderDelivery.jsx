@@ -5,10 +5,15 @@ import ImageData from './ImageData'
 import { ProductPreview } from './ProductPreview'
 import './OrderDelivery.css'
 import BookingMesage from './BookingMesage'
+import { mensOutfit } from '../components/OutfitData'
+import { HomeFooter } from '../components/HomeFooter'
+import { useLocation } from 'react-router-dom'
 
 const OrderDelivery = () => {
+  const location = useLocation();
+  const data = location.state;
   return (
-    <div>
+    <div className='out-container'>
         <HomeHeader/>
         <Catogeries/>
         <BookingMesage/>
@@ -18,9 +23,14 @@ const OrderDelivery = () => {
         <ProductPreview/>
         </div> 
         <div className='order-delivery'>
-        <ImageData/> 
+        <ImageData {...data.productInfo}/> 
         </div> 
+        <div className='footer-page'>
+          <HomeFooter clothItems = {mensOutfit}/>
         </div>
+        
+        </div>
+       
     </div>
   )
 }

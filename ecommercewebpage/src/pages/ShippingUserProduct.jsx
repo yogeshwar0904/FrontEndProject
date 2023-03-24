@@ -15,7 +15,7 @@ const ShippingUserProduct = () => {
         <Catogeries/>
         <UserPreviewForm/>
         <div className='image-style'>
-        <ImageData/>
+        <ImageData {...data.productInfo}/>
         </div>
         
     </div>

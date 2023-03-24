@@ -25,7 +25,7 @@ import './ProductInfo.css'
           }}
 
        return (
-         <div>
+         <div className=''>
              <div className="details">
              <h2 className="product-brand">{data.brand}</h2>
              <p className="product-short-des">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>

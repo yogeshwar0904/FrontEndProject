@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-//import '../components/Product'
+import './Imageoutfit.css'
 import HomeHeader from '../components/HomeHeader'
 import Catogeries from '../components/Catogeries'
 import { imageDetails } from './ProductSize'
@@ -8,7 +8,7 @@ import ImageData from './ImageData'
 export default function Imageoutfit () {
 
   return (
-    <div className='page-color'>  
+    <div className='outer-div'>  
     <HomeHeader/>
     <Catogeries/>
     <ImageData />

@@ -1,28 +1,27 @@
 import './Form.css'
 import React, { useState } from 'react'
 import { useLocation, useNavigate } from 'react-router-dom'
-import {useForm } from 'react-hook-form'
 export const BookingForm = () => {
   const location = useLocation()
-  const data = location.state
+  const productInfo = location.state
   const navigate = useNavigate();
-  const datas = ({fullName: '', email:'', mobileNumber:'', address:'', city:'',pincode:''})
+  const datas = ({userInfo: {fullName: '', email:'', mobileNumber:'', address:'', city:'',pincode:''},
+                  productInfo})
   const [userDetails, setUserDetails]= useState(datas)
 
-  const  userOutfit = {...userDetails, ...data};
-  
    function getDatas(event) {
       const {name, value} = event.target;
-       setUserDetails({ ...userDetails, [name]:value})
+      userDetails.userInfo[name] = value;
+       setUserDetails({ ...userDetails})
    }
 
   function bookingMessage() {
-    navigate('/shippinguserproduct',{state:userOutfit});
+    navigate('/shippinguserproduct',{state:userDetails});
    } 
 
   return(
     <div >
-    <div className="">
+    
     <div className='container '>
 
       <form className='form' onSubmit={ (event) => bookingMessage(event)}>
@@ -73,6 +72,5 @@ export const BookingForm = () => {
 
     </div>
    
-    </div>
   )
 }

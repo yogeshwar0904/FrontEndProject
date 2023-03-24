@@ -1,20 +1,9 @@
-*{
+/* *{
   margin: 0;
   box-sizing: border-box;
   padding: 0;
-}
-.outer-container{
-  
-  /* min-height: 100vh; */
-  height: 40%;
-  width: 50%;
-  display: flex;
-  padding: 150px 30px 20px 100px;
-  background: #7CB9E8;
-  border-radius: 50px;
-  margin-left: 200px;
-  
-}
+} */
+
 .container{
   position: relative;
   top:150px;
@@ -23,7 +12,7 @@
   background: #fff;
   padding: 20px;
   border-radius: 8px;
-  left: 30px;
+  left: 350px;
   border-radius: 20px;
 }
 

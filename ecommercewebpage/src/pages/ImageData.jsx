@@ -1,12 +1,16 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
 
-export default function ImageData () {
+export default function ImageData (productData) {
     const location = useLocation()
-    const data = location.state;
+    let data = location.state;
+    if (productData.URL) {
+      data = productData;
+    }
     console.log("imagedata::", data);
 
    return (  
+   <div className="outer-con">
     <div className='image'>
     <div className='product-card'>
         <div className='product-image'>
@@ -19,6 +23,7 @@ export default function ImageData () {
            <span className="price">{data.price}</span>
            <span className="actual-price">{data.actualPrice}</span>
         </div>
+    </div>
     </div>
     </div>
    )

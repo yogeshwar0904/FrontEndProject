@@ -1,16 +1,22 @@
- *{
+ /* *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     outline: none;
     font-family: 'Roboto', sans-serif;
-  }
+    overflow: hidden;
+  } */
   
-  body{
+  /* body{
     background-size: cover;
     height: 100vh;
+    overflow: hidden;
   }
-  
+   */
+   .out-container{
+
+    overflow: hidden;
+   }
   .wrapper {
     position: absolute;
     left: 30%;
@@ -66,8 +72,11 @@
     margin-top: 10px;
     padding: 10px;
     font-family: Verdana, sans-serif;
+    
   } 
-  
+  .border{
+    border-bottom: 1px solid black;
+  }
   .edit-form{
     position: relative;
     width:120px;
@@ -80,8 +89,15 @@
     font-size: 20px;
     color:rgba(0,0,0,0.8);
     border: none;
+    cursor: pointer;
   }
 
+  .edit-form:hover{
+    border: 2px solid #6699CC;
+  }
+  .btnn:hover{
+    border: 2px solid #6699CC;
+  }
   p{
     line-height: 25px;
     font-weight: 10px;

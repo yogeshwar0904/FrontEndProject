@@ -11,7 +11,7 @@ import { HomeFooter } from '../components/HomeFooter'
 
 const Layout = () => {
   return (
-    <div className='page-color'>
+    <div >
        <HomeHeader />
        <Catogeries/>
        <HomeProfile/>

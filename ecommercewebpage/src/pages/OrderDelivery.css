@@ -1,3 +1,6 @@
+out-container{
+  overflow: hidden;
+}
 .container2{
     position: relative;
     right: 400px;
@@ -14,4 +17,9 @@
   .page{
     background:#E1EBEE;
     height: 740px;
+  }
+  .footer-page{
+    position:absolute;
+    top: 720px;
+    width: 100%;
   }

@@ -5,14 +5,14 @@ export const ProductPreview = () => {
 	const location = useLocation();
 	const data = location.state;
 	console.log("I'm in product preview",data.offer)
-    console.log(discountCalculation())
-	function discountCalculation(){
-			let price = data.actualPrice;
-			let offerPrice = data.price;
-			const savingPrice = price -offerPrice;
-			return savingPrice;
+    // console.log(discountCalculation())
+	// function discountCalculation(){
+	// 		let price = data.actualPrice;
+	// 		let offerPrice = data.price;
+	// 		const savingPrice = price -offerPrice;
+	// 		return savingPrice;
 	
-	} 
+	// } 
   return (
     <div>
             <div className='container1'>
@@ -21,7 +21,7 @@ export const ProductPreview = () => {
 				<div className='row-one-group'>
 					<div className='row-one-table'>
 						<div className='row-one-body'>Price(1 item)</div>
-						<div className='row-one-body '>{data.price}</div>
+						<div className='row-one-body '>{data.productInfo.price}</div>
 					</div>
 				    </div>
 					<div className='row-one-group '>
@@ -40,7 +40,7 @@ export const ProductPreview = () => {
 					<div className='row-one-group '>
 					<div className='row-one-table '>
 						<div className='row-four-body '>Total payable</div>
-						<div className='row-four-body'>{data.price}</div>
+						<div className='row-four-body'>{data.productInfo.price}</div>
 					
 					</div>	
 				    </div>

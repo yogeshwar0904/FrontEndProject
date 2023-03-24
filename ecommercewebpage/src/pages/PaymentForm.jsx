@@ -9,6 +9,7 @@ const PaymentForm = () => {
      rout("/orderdelivery", {state:data});
   }
   return (
+    <div className='out-con'>
     <div className='page-container'>
     <div className='header-container'>
         <h1>
@@ -32,6 +33,7 @@ const PaymentForm = () => {
       <label for="">Cash on Delivery</label>
     </div>
     <button type="submit" className='butn' onClick={deliveryOrder} >CONFIRM ORDER</button>
+    </div>
     </div>
   )
 }
