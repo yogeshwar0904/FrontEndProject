@@ -12,9 +12,9 @@ const PaymentForm = () => {
     <div className='out-con'>
     <div className='page-container'>
     <div className='header-container'>
-        <h1>
+        <h2>
            Payment Option
-        </h1>
+        </h2>
     </div>
     <div className='header-container hea'>
     <input type="radio" id="upi" name="payment" value="upi"  checked/>

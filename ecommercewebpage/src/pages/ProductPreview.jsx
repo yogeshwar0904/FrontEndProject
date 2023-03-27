@@ -26,8 +26,8 @@ export const ProductPreview = () => {
 				    </div>
 					<div className='row-one-group '>
 					<div className='row-one-table '>
-						<div className='row-two-body '>Delivery Charges</div>
-						<div className='row-two-body color'>Free</div>
+						<div className='row-two-body '>Product Id</div>
+						<div className='row-two-body '>Id1324</div>
 					</div>
 				    </div>
 					<div className='row-one-group '>
@@ -39,18 +39,25 @@ export const ProductPreview = () => {
 				    </div>
 					<div className='row-one-group '>
 					<div className='row-one-table '>
-						<div className='row-four-body '>Total payable</div>
-						<div className='row-four-body'>{data.productInfo.price}</div>
-					
+					<div className='row-four-body '>Delivery charge</div>
+						<div className='row-four-body color'>Free</div>
+					</div>	
+				    </div>
+
+					<div className='row-one-group '>
+					<div className='row-one-table '>
+						<div className='row-five-body '>Total payable</div>
+						<div className='row-five-body'>{data.productInfo.price}</div>
 					</div>	
 				    </div>
 				</div>
+
+				
 				
 	        </div>
 			<div>
 				<h1>hii</h1>
 			</div>
-
     </div>
   )
 }

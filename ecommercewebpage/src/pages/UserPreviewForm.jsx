@@ -28,21 +28,20 @@ const UserPreviewForm = () => {
               </div>
               <div className='order-by address-details '>
                   <h4>Deliver To</h4>
-                  <p className='border'>
+                  <p>
                   {data.userInfo.fullName},<br/> 
                   {data.userInfo.address},<br/> 
                   {data.userInfo.city},<br/>
                   {data.userInfo.pincode}
                 </p>
-                <button className='edit-form'>change</button>
+                <button className='edit-form' onClick={routToCustomerOrder}>change</button>
               </div>
               <div className='order-by'>
                   <p>
-                   order conformation will send to {data.userInfo.email}
-                </p>
+                   order conformation will send to <a className='email-color'> {data.userInfo.email}</a>
+                  </p>
               </div>
-              
-              
+                
            </div>
            <div class="btnn" onClick={routToBookingMessage}>Click to Continue</div>
         </div> 

@@ -64,9 +64,7 @@ font-family: 'roboto', sans-serif;
 }
 
 .nav-items a{
-  
-    margin-left: 20px;
- 
+    margin-left: 30px;
 }
 
 .nav-items a img{
@@ -77,5 +75,5 @@ font-family: 'roboto', sans-serif;
 .cart{
  
     font-weight: 600;
-    color: orange;
+    /* color: orange; */
 }

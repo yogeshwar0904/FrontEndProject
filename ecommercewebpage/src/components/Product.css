@@ -35,7 +35,6 @@
     display: flex;
     top:50px;
     left:20px;
-    
 }
 .image:hover{
     transition:scale(1.5);

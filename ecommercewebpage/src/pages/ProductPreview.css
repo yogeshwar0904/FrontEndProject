@@ -6,10 +6,10 @@
     width: 480px;
     top: 200px;
     display: flex;
-    background: #F5F5F5;
+    background: white;
     border-radius: 10px;
     padding: 4px;
-    color:gray;
+    border: 1px solid black;
   }
  
   .heading{
@@ -40,20 +40,20 @@
    }
 
    .row-one-body{
-    padding: 60px 50px 30px 20px;
+    padding: 60px 50px 20px 20px;
     display: table-cell;
     text-align: justify;
     width: 450px;
-    font-size: 23px;
+    font-size: 18px;
     font-family: Verdana, sans-serif;
      }
 
      .row-two-body{
-      padding: 0px 0px 130px 20px;
+      padding: 0px 0px 120px 20px;
       display: table-cell;
       text-align: justify;
       width: 450px;
-      font-size: 23px;
+      font-size: 18px;
       font-family: Verdana, sans-serif;
      }
 
@@ -68,18 +68,29 @@
       display: table-cell;
       text-align: justify;
       width: 450px;
-      font-size: 23px;
+      font-size: 18px;
       font-family: Verdana, sans-serif;
      }
 
      .row-four-body{
       position: relative;
-      bottom: 67px;
+      bottom: 80px;
       left: 20px;
       display: table-cell;
       text-align: justify;
       width: 450px;
-      font-size: 23px;
+      font-size: 18px;
+      font-family: Verdana, sans-serif;
+     }
+
+     .row-five-body{
+      position: relative;
+      bottom: 65px;
+      left: 20px;
+      display: table-cell;
+      text-align: justify;
+      width: 450px;
+      font-size: 18px;
       font-family: Verdana, sans-serif;
      }
 

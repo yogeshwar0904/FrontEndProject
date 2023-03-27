@@ -20,9 +20,9 @@ const HomeHeader = (props) => {
                  <input type ="text" className="search-box" placeholder ="search brand, item"/>
                  <button className='search-btn'>Search</button>
               </div>
-              <a><img src='img/user.png'/> </a>
-              
-              <a onClick={cartBucket} ><img src="img/cart.png"/></a>
+              {/* <a><img src='img/user.png'/> </a> */}
+              <a><img src="https://www.transparentpng.com/thumb/human/black-human-user-profile-png-icon-free-fsR5FT.png" alt="black human user profile png icon free @transparentpng.com"/> </a> 
+              <a onClick={cartBucket} ><img src="https://www.freeiconspng.com/uploads/shopping-cart-icon-2.png"/></a>
               <div className='cart'></div>
            </div>
        </div>

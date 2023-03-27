@@ -14,10 +14,13 @@ out-container{
     position:absolute;
     top: 120px;
   }
-  .page{
-    background:#E1EBEE;
+  .page {
+    /* background:#E1EBEE;
+     */
+     background: #FEFCFF;
     height: 740px;
   }
+  
   .footer-page{
     position:absolute;
     top: 720px;
