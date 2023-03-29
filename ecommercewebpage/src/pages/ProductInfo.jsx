@@ -1,18 +1,25 @@
 import { useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
+import Cartproduct from './Cartproduct';
 import './ProductInfo.css'
-
- const ProductInfo = (props) => {
+import Emitter from './Emitter';
+import { render } from '@testing-library/react';
+ 
+ export const ProductInfo = (props) => {
   
         const location = useLocation()
         const data = location.state;
         const navigate = useNavigate(); 
         const [active, setActive] = useState('');
-        console.log("I'm in product info",data)
-         
-        function AddToCart (){
-            navigate("/cartproduct", {state:data})
+
+        let [count, setCount] = useState(0);
+        console.log("I'm in product info",count);
+        
+
+        const  increaseCartproduct =(e)=> {
+          Emitter.emit('addTobag', data);
+          setCount(count + 1);
         }
       
         function buyProduct(){
@@ -23,8 +30,9 @@ import './ProductInfo.css'
          } else {
             alert("Please select the size!!!")
           }}
-
-       return (
+ 
+      render()
+       {return (
          <div className=''>
              <div className="details">
              <h2 className="product-brand">{data.brand}</h2>
@@ -43,14 +51,15 @@ import './ProductInfo.css'
                        (<button   onClick={() =>setActive(values.sizeType)} className=" size-radio-btn btnnn"><label  >{values.sizeType}</label></button>)
                        : (<button  onClick={() =>setActive(values.sizeType)} className="size-radio-btn"><label>{values.sizeType}</label></button>)
                      }
-                       
+                        
                     </div>
                  )})}
                  
             <button  className="btn cart-btn" onClick={buyProduct}>buy</button>
-            <button className="btn cart-btn" onClick={AddToCart} >add to cart</button>
+            <button className="btn cart-btn" onClick ={increaseCartproduct}>add to cart</button>
          </div>
         </div>
-         )}
-
-export default ProductInfo
+         )}}
+ 
+        
+         

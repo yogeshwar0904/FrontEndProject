@@ -15,6 +15,7 @@ import OrderDelivery from './pages/OrderDelivery';
 import ShippingUserProduct from './pages/ShippingUserProduct';
 import PaymentPage from './pages/PaymentPage';
 
+const cartArrays = [1,2,3];
 function App() {
   return (
     <div>
