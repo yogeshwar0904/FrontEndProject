@@ -1,10 +1,7 @@
 import { useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
-import Cartproduct from './Cartproduct';
 import './ProductInfo.css'
-import Emitter from './Emitter';
-import { render } from '@testing-library/react';
  
  export const ProductInfo = (props) => {
   
@@ -12,14 +9,14 @@ import { render } from '@testing-library/react';
         const data = location.state;
         const navigate = useNavigate(); 
         const [active, setActive] = useState('');
-
+      
         let [count, setCount] = useState(0);
         console.log("I'm in product info",count);
-        
+        console.log("I'm in product info",data);
 
-        const  increaseCartproduct =(e)=> {
-          Emitter.emit('addTobag', data);
-          setCount(count + 1);
+        const  increaseCartproduct =()=> { 
+           data.count=count + 1;
+           sessionStorage.setItem("keys", JSON.stringify(data))
         }
       
         function buyProduct(){
@@ -31,8 +28,8 @@ import { render } from '@testing-library/react';
             alert("Please select the size!!!")
           }}
  
-      render()
-       {return (
+      
+       return (
          <div className=''>
              <div className="details">
              <h2 className="product-brand">{data.brand}</h2>
@@ -59,7 +56,7 @@ import { render } from '@testing-library/react';
             <button className="btn cart-btn" onClick ={increaseCartproduct}>add to cart</button>
          </div>
         </div>
-         )}}
+         )}
  
         
          

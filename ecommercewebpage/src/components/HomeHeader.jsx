@@ -3,11 +3,17 @@ import { useLocation, useNavigate } from 'react-router-dom'
 import  './HomeHeader.css'
 import ImageData from '../pages/ImageData'
 import { ProductInfo } from '../pages/ProductInfo'
-const HomeHeader = (props) => {
-   const location = useLocation()
-   const data = location.useState
+const HomeHeader = () => {
    const navigate = useNavigate()
    console.log("check productinfo", ProductInfo)
+
+  
+
+   // const cartS = sessionStorage.getItem("keys");
+   //  const addToBag = JSON.parse(cartS);
+   //  console.log("SESSION::::::::GOT", addToBag.count)
+
+
    function cartBucket (){
       navigate("/cartproduct")
    }
