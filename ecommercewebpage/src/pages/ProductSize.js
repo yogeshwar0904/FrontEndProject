@@ -1,26 +1,26 @@
 export const imageDetails = [
     {
         key:1,
-        sizeType:"s"
+        sizeType:"S"
     },
 
     {
         key:2,
-        sizeType:"m" , 
+        sizeType:"M" , 
     },
 
     {
         key:3,
-        sizeType:"l"  
+        sizeType:"L"  
     },
 
     {
         key:4,
-        sizeType:"xl"  
+        sizeType:"XL"  
     },
     
     {
         key:5,
-        sizeType:"xxl"  
+        sizeType:"XXL"  
     }
 ]

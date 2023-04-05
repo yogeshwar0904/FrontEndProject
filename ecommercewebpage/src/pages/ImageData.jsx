@@ -7,7 +7,7 @@ export default function ImageData (productData) {
     if (productData.URL) {
       data = productData;
     }
-    console.log("imagedata::", data);
+    console.log("imagedata::::::::", data.size );
 
    return (  
    <div className="outer-con">
@@ -22,6 +22,7 @@ export default function ImageData (productData) {
            <h2 className="product-brand">{data.brand}</h2>
            <span className="price">{data.price}</span>
            <span className="actual-price">{data.actualPrice}</span>
+           {typeof data.size !== "undefined" ? <div className="cloth-size">{data.size}</div>:<></>}
         </div>
     </div>
     </div>

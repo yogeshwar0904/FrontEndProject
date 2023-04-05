@@ -2,19 +2,16 @@ import React, { useState } from 'react'
 import { useLocation, useNavigate } from 'react-router-dom'
 import  './HomeHeader.css'
 import ImageData from '../pages/ImageData'
-import { ProductInfo } from '../pages/ProductInfo'
+import  ProductInfo  from '../pages/ProductInfo'
 const HomeHeader = () => {
    const navigate = useNavigate()
    console.log("check productinfo", ProductInfo)
 
-  
+   const carts = sessionStorage.getItem("keys");
+    const addToBag = JSON.parse(carts);
+   console.log("SESSION::::::::GOT", addToBag)
 
-   // const cartS = sessionStorage.getItem("keys");
-   //  const addToBag = JSON.parse(cartS);
-   //  console.log("SESSION::::::::GOT", addToBag.count)
-
-
-   function cartBucket (){
+   function cartBucket () {
       navigate("/cartproduct")
    }
   return (
@@ -29,7 +26,7 @@ const HomeHeader = () => {
       
               <a><img src="https://www.transparentpng.com/thumb/human/black-human-user-profile-png-icon-free-fsR5FT.png" /> </a> 
               <a onClick={cartBucket} ><img src="https://www.freeiconspng.com/uploads/shopping-cart-icon-2.png"/></a>
-              <div className='cart'></div>
+              { addToBag !== null ? (<div className='cart-button-top'>{addToBag.count} </div>):<></>}
            </div>
        </div>
     </nav>
@@ -37,3 +34,4 @@ const HomeHeader = () => {
 }
 
 export default HomeHeader;
+ 

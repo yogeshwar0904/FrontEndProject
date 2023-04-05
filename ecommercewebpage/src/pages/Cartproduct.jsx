@@ -1,7 +1,9 @@
+
 import HomeHeader from '../components/HomeHeader';
 import Catogeries from '../components/Catogeries';
 import ImageData from './ImageData';
 import './Cartproduct.css'
+import CartButton from './CartButton';
 
 const Cartproduct = () => {
 
@@ -13,7 +15,11 @@ const Cartproduct = () => {
     <div>
         <HomeHeader/>
         <Catogeries/>
-        <ImageData {...addToBag}/>   
+        { ( addToBag === null) ?
+          (<h1>cart is empty</h1>):
+          <ImageData {...addToBag}/>         
+         }
+         <CartButton/>
     </div>)
 }
-export default Cartproduct
+export default Cartproduct;

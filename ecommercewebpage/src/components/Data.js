@@ -31,6 +31,6 @@ export let productData =[
       price:"Rs.500",
       actualPrice:"Rs.1000",
       offer:"50% off",
-      brand:"PETER-ENGLAND"
+      brand:"ALLEN-SOLLY"
    }  
 ]
