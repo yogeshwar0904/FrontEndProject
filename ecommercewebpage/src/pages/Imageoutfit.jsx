@@ -10,8 +10,8 @@ export default function Imageoutfit () {
   return (
     <div className='outer-div'>  
     <HomeHeader/>
-    <Catogeries/>
-    <ImageData />
+    <Catogeries/> 
+    <ImageData/>
     <ProductInfo productDetails = {imageDetails}/>
     </div>
 );}

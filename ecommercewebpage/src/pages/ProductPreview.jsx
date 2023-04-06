@@ -4,15 +4,8 @@ import "./ProductPreview.css"
 export const ProductPreview = () => {
 	const location = useLocation();
 	const data = location.state;
-	console.log("I'm in product preview",data.offer)
-    // console.log(discountCalculation())
-	// function discountCalculation(){
-	// 		let price = data.actualPrice;
-	// 		let offerPrice = data.price;
-	// 		const savingPrice = price -offerPrice;
-	// 		return savingPrice;
-	
-	// } 
+	console.log("I'm in product preview", data.offer)
+ 
   return (
     <div>
             <div className='container1'>

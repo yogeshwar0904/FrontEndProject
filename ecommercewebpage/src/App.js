@@ -20,8 +20,8 @@ function App() {
   return (
     <div>
        <Routes>
-          <Route path="/" element={<Layout />} exact/>
-          <Route path="/womenoutfit" element={<WomenOutfit />}/>
+          <Route path="/" element={<Layout/>} exact/>
+          <Route path="/womenoutfit" element={<WomenOutfit/>}/>
           <Route path="/kidsfit" element={<KidsOutfit />}/>
           <Route path="/menoutfit" element={<MenOutfit />}/>
           <Route path="/imageoutfit" element ={<Imageoutfit obj={imageDetails}/>} />

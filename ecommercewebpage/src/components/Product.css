@@ -128,12 +128,13 @@
 }
 
 .cloth-size{
+    background-color:orange;
     position: relative;
     font-size: 1rem;
     padding: 0.5rem;
     margin: 0.1rem;
     left: 180px;
-    bottom: 35px;
+    bottom: 45px;
     border-radius: 1.2rem;
     border: 0.1rem #404040 solid;
     width: 2.7rem;

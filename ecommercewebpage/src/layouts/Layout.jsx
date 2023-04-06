@@ -12,7 +12,7 @@ import { HomeFooter } from '../components/HomeFooter'
 const Layout = () => {
   return (
     <div >
-       <HomeHeader />
+       <HomeHeader/>
        <Catogeries/>
        <HomeProfile/>
        <Slider/>

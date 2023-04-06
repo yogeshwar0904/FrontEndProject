@@ -19,8 +19,10 @@ const CartButton = () => {
     
     <div>
       {bookTheProduct !== null ? (
-        //  <button className ='cart-button' onClick={buyProduct} >Place Order</button>        
-         <button className ='cart-button' onClick={removeProduct}>Remove</button>):(<></>)}
+         <button className ='cart-button' onClick={buyProduct} >Place Order</button>        
+        ):(<></>)}
+      {bookTheProduct !== null ? (
+         <button className ='cart-button cart-button2' onClick={removeProduct}>Remove</button>):(<></>)}
     </div>
   )
 }

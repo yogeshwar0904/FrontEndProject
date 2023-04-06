@@ -51,7 +51,7 @@
 }
 
 .size-radio-btn{
-    display: inline-block;
+    /* display: inline-block; */
     width: 60px;
     height: 60px;
     text-align: center;
@@ -91,6 +91,7 @@
 .cart-btn{
     margin-right: 4%;
 }
+
 .btn:hover{
     background: orange;
 }

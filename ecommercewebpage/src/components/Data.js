@@ -13,7 +13,7 @@ export let productData =[
         price:"Rs.800",
         actualPrice:"Rs.1000",
         offer:"20% off",
-        brand:"BLACK-BERRY'S"
+        brand:"RAYMOND"
     },
  
      {

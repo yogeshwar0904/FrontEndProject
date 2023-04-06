@@ -19,7 +19,7 @@ import { useEffect } from 'react';
         console.log("THE COUNT VALUE:::::::",count);
 
         const  increaseCartproduct =()=> { 
-            setCount(count + 1);             
+            setCount(1);             
         }
       
         useEffect(()=> {
@@ -28,7 +28,6 @@ import { useEffect } from 'react';
             data.size=active;
             sessionStorage.setItem("keys", JSON.stringify(data));
         } else {
-         alert("Please select the size!!!");
        }
         }, [count])
 

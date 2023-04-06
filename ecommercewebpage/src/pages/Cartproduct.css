@@ -16,9 +16,16 @@
     margin: 0.5rem;
     border-radius: 0.5rem;
   }
+
   .text-right {
     text-align: right;
   }
+  
   img.small {
     max-height: 8rem;
+  }
+  .footer-cart-page{
+    position:absolute;
+    top: 600px;
+    width: 100%;
   }
