@@ -15,7 +15,7 @@ const HomeHeader = () => {
       navigate("/cartproduct")
    }
   return (
-    <nav className='header'>
+    <div home-headerid='Home-Header' className='header'>
        <div className='nav'>
         <img src="" className= 'brand-logo'/>
            <div className='nav-items'>
@@ -29,7 +29,7 @@ const HomeHeader = () => {
               { addToBag !== null ? (<div className='cart-button-top'>{addToBag.count} </div>):<></>}
            </div>
        </div>
-    </nav>
+    </div>
   )
 }
 

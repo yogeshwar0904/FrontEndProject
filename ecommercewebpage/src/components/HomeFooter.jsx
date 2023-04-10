@@ -2,7 +2,7 @@ import React from 'react'
 import './HomeFooter.css'
 export const HomeFooter = (props) => {
     return(
-       <footer>
+       <footer footerid='Home-Footer'>
        <div className="footer-content">
        <img src="img/light-logo.png" className="logo" alt=""/>
        <div className="footer-ul-container">
