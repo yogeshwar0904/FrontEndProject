@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+    <title>Stencil Component Starter</title>
+
+    <script type="module" src="/build/my-first-stencil-project.esm.js"></script>
+    <script nomodule src="/build/my-first-stencil-project.js"></script>
+
+  </head>
+
+  <body>
+    <div>
+    <home-header></home-header>
+    <div class="content">
+      <button class="open-modal"> open-modal</button>
+      <home-buttons></home-buttons>
+      <demo-example title="Stencil Custom Modal" content="'Don't call me a framework' JS"></demo-example>
+      <home-cards title="Card Title" content="Card Body"></home-cards>
+    </div>
+    <home-footer/>
+  </div>
+  </body>
+
+<script>
+  var openModal = document.querySelector('button');
+  var modal = document.querySelector('demo-example');
+  openModal.addEventListener('click', function(){
+    modal.openModal();
+  })
+</script>
+
+  <style>
+    .open-modal {
+      text-align: center;
+      padding: 10px;
+      background: greenyellow;
+      color: white;
+      border-radius: 10px;
+      font-size: 16px;
+      text-transform: uppercase;
+      margin: 20px;
+      width: calc(100% - 40px);
+      box-shadow: none;
+      border: none;
+    }
+
+    .content{
+      margin: auto;
+      height: calc(100vh - 84px);
+      margin-top: 42px;
+      margin-bottom: 42px;
+    }
+  </style>
+</html>
+ 
