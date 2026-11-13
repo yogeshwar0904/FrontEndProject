@@ -47,6 +47,14 @@ test(
       await page.getByRole("presentation").locator('div.MuiBackdrop-root').click();
     });
 
+    await test.step('#10 - Click on the presentation element filtered by text \'MM/DD/YYYY\' (3rd occurrence)', async () => {
+      await page.getByRole("presentation").filter({ hasText: "MM/DD/YYYY" }).nth(3).click();
+    });
+
+    await test.step('#11 - Click on the presentation element filtered by text \'MM/DD/YYYY\' (3rd occurrence)', async () => {
+      await page.getByRole("presentation").filter({ hasText: "MM/DD/YYYY" }).nth(3).click();
+    });
+
   }
 );
 
